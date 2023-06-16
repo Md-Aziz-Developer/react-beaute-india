@@ -1,0 +1,23 @@
+.slider {
+    height: 10px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Styles for the slider thumb */
+.slider .thumb {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the slider active state */
+.slider .thumb.active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
