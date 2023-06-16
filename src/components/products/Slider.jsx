@@ -9,12 +9,12 @@ const Slider = () => {
         <div
             id="carouselExampleIndicators"
             className="carousel slide"
-            data-bs-ride="carousel"
+            data-bs-ride="true"
         >
             <div className="carousel-inner">
                 {data.map((item, idx) => (
                     <Fragment key={idx}>
-                        <div className={`carousel-item ${idx === 0 ? 'active' : ''} `}>
+                        <div className={`carousel-item ${idx === 0 ? 'active' : ''} `} data-bs-interval="3000">
                             <img src={item.image || banner} className="d-block w-100" alt="..." />
                         </div>
                     </Fragment>

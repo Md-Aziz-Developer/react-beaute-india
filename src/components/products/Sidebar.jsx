@@ -109,37 +109,11 @@ const Sidebar = () => {
                     <li className='mb-3' >
                         <a><img src={downArrow} alt="" />&nbsp;<u className="cathead">Price</u></a>
                     </li>
-                    <div className="scroll-div">
-                        <ul className="list-group">
-
-                            {
-                                priceList.map((price, idx) => (
-                                    <li className="list-group-item" key={idx}>
-                                        <input
-                                            id={`price_${idx}`}
-                                            className="form-check-input me-1"
-                                            type="radio"
-                                            name='price'
-                                            value={price.value}
-                                            onClick={(e) => handleNavigate(e, 'price', price.value)}
-                                        />
-                                        <label htmlFor={`price_${idx}`}>
-
-                                        ₹{price.label}
-                                        </label>
-                                    </li>
-                                ))
-                            }
-
-
-
-
-                        </ul>
-                    </div>
+                    <PriceSlider/>
                 </ul>
             </div>
             <div className='price-range'>
-                            <PriceSlider/>
+                          
             </div>
             <div className="size-filter mb-5">
                 <ul className="nav flex-column">

@@ -17,7 +17,7 @@ const PriceSlider = () => {
 }
 
   return (
-    <div style={{ padding: '20px', border: '1px solid #ddd', borderRadius: '5px', boxShadow: '0 0 5px rgba(0, 0, 0, 0.1)' }}>
+    <div style={{ padding: '10px 20px 0px 9px'  }}>
      
       <Slider
         className="slider"

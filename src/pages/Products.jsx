@@ -22,7 +22,6 @@ const Products = () => {
 		}
 	}, [isLoggedIn])
 	const { data } = ProductQuery()
-		console.log(data);
 	const handleNavigate = (e, key, value) => {
 		const Obj = {}
 		for (const [key, value] of searchParams) {
