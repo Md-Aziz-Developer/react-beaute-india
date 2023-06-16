@@ -9,6 +9,7 @@ import notification from 'utilities/notification';
 import { toJson } from 'utilities/str';
 import DefaultAddressQuery from './DefaultAddressQuery';
 import { useNavigate } from "react-router-dom";
+import { RAZORPAY_KEY } from 'Secret';
 
 
 const OrderForm = () => {
@@ -103,7 +104,7 @@ const OrderForm = () => {
 		// console.log(data)
 
 		const options = {
-			key: 'rzp_test_1DKpSUIdqguma0',
+			key: RAZORPAY_KEY,
 			currency: "INR",
 			amount: (initialValues.total)*100,
 			// order_id: "10199",
